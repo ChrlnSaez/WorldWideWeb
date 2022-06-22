@@ -24,6 +24,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 2em 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #F6FBF4;
 }
 nav input[type=text] {
   border: #4B8673 1px solid;
@@ -48,6 +52,45 @@ nav button {
   cursor: pointer;
 }
 
+.help {
+  position: fixed;
+  bottom: 2em;
+  right: 4em;
+  background: #F5DF99;
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.help:hover p {
+  visibility: visible;
+  transition: all 0.5s;
+}
+.help:hover i {
+  color: #F6FBF4;
+}
+.help:hover {
+  background: #4B8673;
+}
+.help i {
+  font-size: 1.5em;
+  color: #4B8673;
+}
+.help p {
+  position: absolute;
+  top: -2.5em;
+  right: -0.5em;
+  border-radius: 25px;
+  padding: 0.1em 1em;
+  background-color: #F5DF99;
+  margin-left: 0.5em;
+  color: #4B8673;
+  font-weight: bold;
+  visibility: hidden;
+}
+
 .hero {
   margin: 2em 0;
   display: flex;
@@ -56,6 +99,9 @@ nav button {
   justify-content: center;
 }
 
+dl {
+  margin-bottom: 2em;
+}
 dl dt {
   font-weight: bold;
   margin: 1em 0;
@@ -63,4 +109,4 @@ dl dt {
 
 .see-also {
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.min.css.map */
